@@ -63,5 +63,5 @@ RSpec.configure do |config|
 end
 
 RSpec.configure do |c|
-        c.expose_current_running_example_as :example
-      end
+  c.expose_current_running_example_as :example
+end
