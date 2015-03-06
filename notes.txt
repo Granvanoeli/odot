@@ -16,3 +16,6 @@ If you're migrating from Capybara 1.x, try:
     end
 
 Details here: http://www.elabs.se/blog/60-introducing-capybara-2-1
+
+how to get rid of rspec deprecation messages
+https://teamtreehouse.com/forum/depreciation-warnings-in-binrake-spec
