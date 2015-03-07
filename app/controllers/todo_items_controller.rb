@@ -22,7 +22,7 @@ class TodoItemsController < ApplicationController
   end
 
   private
-  def todo_items_params
+  def todo_item_params
   	params[:todo_item].permit(:content)
   end
 
