@@ -21,7 +21,7 @@ div.alert {
 
 div.flash.success { border:2px solid green; color: green;}
 div.flash.failure { border:2px solid red; color: red;}
-div.flash.notuice { border:2px solid blue; color: blue;}
+div.flash.notice { border:2px solid blue; color: blue;}
 
 .clear { clear: both; }
 
