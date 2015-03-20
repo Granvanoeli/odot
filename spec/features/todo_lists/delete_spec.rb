@@ -1,9 +1,13 @@
 require 'spec_helper'
 
 describe "Editing todo lists"  do
-
+	let(:user) { create(:user) }
 	let! (:todo_list) { TodoList.create(title: "Groceries", description: "Grocery list") }
 
+	before do
+		sign_in user, password: "supersecure123"
+	end
+	
 	it "appropriately deletes a todo list" do
 		visit "/todo_lists"
 

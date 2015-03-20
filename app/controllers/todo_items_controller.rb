@@ -2,7 +2,7 @@ class TodoItemsController < ApplicationController
 
   # This is here because every single action in this controller does this 
   # before anything else. So it has been refactored.
-  
+  before_action :require_user
   before_action :find_todo_list
 
   def index

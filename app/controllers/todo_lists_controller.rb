@@ -1,4 +1,5 @@
 class TodoListsController < ApplicationController
+  before_action :require_user # We can use :require_user here, because TodoListController inherits from ApplicationController
   before_action :set_todo_list, only: [:show, :edit, :update, :destroy]
 
   # GET /todo_lists

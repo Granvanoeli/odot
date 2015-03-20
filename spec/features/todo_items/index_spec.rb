@@ -3,14 +3,9 @@ require 'spec_helper'
 describe "Viewing todo items" do
 
 	let!(:todo_list) { TodoList.create(title: "Grocery list", description: "Groceries") }
+	let(:user) { create(:user) }
 
-
-	# before do
-	# 	visit "/todo_lists"
-	# 	within "#todo_list_#{todo_list.id}" do
-	# 		click_link "List Items"
-	# 	end
-	# end
+	before { sign_in user, password: "supersecure123" }
 
 	it "displays the title of the todo_list" do
 		visit_todo_list(todo_list)
